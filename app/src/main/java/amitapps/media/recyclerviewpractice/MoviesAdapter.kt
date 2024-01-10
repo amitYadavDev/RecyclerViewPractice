@@ -22,9 +22,9 @@ internal class MoviesAdapter(private var moviesList: List<MovieModel>) :
     }
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val movie = moviesList[position]
-        holder.title.text = movie.getTitle()
-        holder.genre.text = movie.getGenre()
-        holder.year.text = movie.getYear()
+        holder.title.text = movie.title
+        holder.genre.text = movie.genre
+        holder.year.text = movie.year
     }
     override fun getItemCount(): Int {
         return moviesList.size
